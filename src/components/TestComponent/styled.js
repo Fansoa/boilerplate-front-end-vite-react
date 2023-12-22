@@ -1,7 +1,9 @@
 import styled from "@emotion/styled";
 
 const Container = styled.div`
-  background-color: red;
+  ${({ theme, variant }) => `
+    background-color: ${theme.testComponentTheme[variant].backgroundColor}
+  `}
 `;
 
 export default Container;
