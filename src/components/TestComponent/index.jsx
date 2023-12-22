@@ -1,16 +1,31 @@
 import PropTypes from "prop-types";
+import { useState } from "react";
 import Container from "./styled";
 
-const TestComponent = ({ label }) => {
-  return <Container>{label}</Container>;
+const TestComponent = ({ variant }) => {
+  const [isClicked, setIsClicked] = useState(false);
+
+  return (
+    <Container variant={variant}>
+      <p>TestComponent</p>
+      <button
+        onClick={() => {
+          setIsClicked((curr) => !curr);
+        }}
+      >
+        Bouton
+      </button>
+      {isClicked && <p>isClicked</p>}
+    </Container>
+  );
 };
 
 TestComponent.propTypes = {
-  label: PropTypes.string,
+  variant: PropTypes.oneOf(["bleu", "rouge"]),
 };
 
 TestComponent.defaultProps = {
-  label: "label",
+  variant: "bleu",
 };
 
 export default TestComponent;
