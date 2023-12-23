@@ -13,8 +13,21 @@ exports[`TestComponent > Label is displayed 1`] = `
       TestComponent
     </p>
     <button>
-      Bouton
+      common:display.the.text
     </button>
+    <select>
+      <option
+        value="en"
+      >
+        glossary:english
+      </option>
+      <option
+        value="fr"
+      >
+        glossary:french
+      </option>
+    </select>
+    glossary:current.language
   </div>
 </div>
 `;
@@ -32,8 +45,21 @@ exports[`TestComponent > isClicked is displayed when button is clicked 1`] = `
       TestComponent
     </p>
     <button>
-      Bouton
+      common:display.the.text
     </button>
+    <select>
+      <option
+        value="en"
+      >
+        glossary:english
+      </option>
+      <option
+        value="fr"
+      >
+        glossary:french
+      </option>
+    </select>
+    glossary:current.language
   </div>
 </div>
 `;
