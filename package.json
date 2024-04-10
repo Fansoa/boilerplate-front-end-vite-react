@@ -9,7 +9,7 @@
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview -c ./configs/vite.config.js",
     "storybook": "storybook dev -p 6006 -c ./configs/storybook",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build -c ./configs/storybook"
   },
   "dependencies": {
     "@emotion/react": "^11.11.4",
