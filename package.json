@@ -5,10 +5,10 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build -c ./configs/vite.config.js",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview",
-    "storybook": "storybook dev -p 6006",
+    "preview": "vite preview -c ./configs/vite.config.js",
+    "storybook": "storybook dev -p 6006 -c ./configs/storybook",
     "build-storybook": "storybook build"
   },
   "dependencies": {
