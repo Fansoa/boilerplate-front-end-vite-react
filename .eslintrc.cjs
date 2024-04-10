@@ -9,6 +9,7 @@ module.exports = {
     'airbnb',
     'airbnb/hooks',
     'plugin:react/jsx-runtime',
+    'plugin:storybook/recommended',
     'plugin:prettier/recommended'
   ],
   ignorePatterns: ['dist', '.eslintrc.cjs'],
@@ -28,7 +29,7 @@ module.exports = {
     "import/no-extraneous-dependencies": [
       "error", {
         "devDependencies": [
-          "vite.config.js"
+          "./configs/**/**.**",
         ]
       }
     ],
