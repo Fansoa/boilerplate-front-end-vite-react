@@ -1,6 +1,31 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`Label is displayed 1`] = `
+exports[`TestComponent > Button has been clicked 1`] = `
+.emotion-0 {
+  background-color: red;
+}
+
+.emotion-1 {
+  font-weight: 900;
+}
+
+<div>
+  <button
+    class="emotion-0"
+  >
+    <p
+      class="emotion-1"
+    >
+      label
+    </p>
+  </button>
+  <div>
+    Button has been clicked
+  </div>
+</div>
+`;
+
+exports[`TestComponent > Label is displayed 1`] = `
 .emotion-0 {
   background-color: blue;
 }
@@ -10,7 +35,7 @@ exports[`Label is displayed 1`] = `
 }
 
 <div>
-  <div
+  <button
     class="emotion-0"
   >
     <p
@@ -18,6 +43,6 @@ exports[`Label is displayed 1`] = `
     >
       label
     </p>
-  </div>
+  </button>
 </div>
 `;

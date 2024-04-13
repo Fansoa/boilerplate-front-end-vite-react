@@ -4,15 +4,20 @@ import { Container, Label } from "./styled";
 
 const TestComponent = ({ label }) => {
   const [isHover, setIsHover] = useState(false);
+  const [hasClicked, setHasClicked] = useState(false);
 
   return (
-    <Container
-      onMouseEnter={() => setIsHover(true)}
-      onMouseLeave={() => setIsHover(false)}
-      isHover={isHover}
-    >
-      <Label>{label}</Label>
-    </Container>
+    <>
+      <Container
+        onClick={() => setHasClicked(true)}
+        onMouseEnter={() => setIsHover(true)}
+        onMouseLeave={() => setIsHover(false)}
+        isHover={isHover}
+      >
+        <Label>{label}</Label>
+      </Container>
+      {hasClicked && <div>Button has been clicked</div>}
+    </>
   );
 };
 
