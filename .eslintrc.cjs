@@ -18,8 +18,10 @@ module.exports = {
     'import/resolver': {
       alias: {
         map: [
-          ['', './public']
+          ['@', '.'],
+          ['', './public'],
         ],
+        extensions: ['.ts', '.js', '.jsx', '.json']
       }
     }
  },
@@ -29,7 +31,7 @@ module.exports = {
     "import/no-extraneous-dependencies": [
       "error", {
         "devDependencies": [
-          "./configs/**/**.**",
+          "./configs/**/**.**"
         ]
       }
     ],
