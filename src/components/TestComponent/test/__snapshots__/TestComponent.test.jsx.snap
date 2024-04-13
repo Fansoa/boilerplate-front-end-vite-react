@@ -1,0 +1,23 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Label is displayed 1`] = `
+.emotion-0 {
+  background-color: blue;
+}
+
+.emotion-1 {
+  font-weight: 900;
+}
+
+<div>
+  <div
+    class="emotion-0"
+  >
+    <p
+      class="emotion-1"
+    >
+      label
+    </p>
+  </div>
+</div>
+`;
