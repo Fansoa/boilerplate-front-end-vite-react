@@ -1,7 +1,8 @@
 import { useState } from "react";
+import PropTypes from "prop-types";
 import { Container, Label } from "./styled";
 
-const TestComponent = () => {
+const TestComponent = ({ label }) => {
   const [isHover, setIsHover] = useState(false);
 
   return (
@@ -10,9 +11,13 @@ const TestComponent = () => {
       onMouseLeave={() => setIsHover(false)}
       isHover={isHover}
     >
-      <Label>TestComponent</Label>
+      <Label>{label}</Label>
     </Container>
   );
+};
+
+TestComponent.propTypes = {
+  label: PropTypes.string.isRequired,
 };
 
 export default TestComponent;
