@@ -1,11 +1,9 @@
 import styled from "@emotion/styled";
 
-export const Container = styled.button`
-  ${({ theme, isHover }) => `
-    background-color: ${isHover ? theme.TestComponentTheme.hover.backgroundColor : theme.TestComponentTheme.default.backgroundColor};
+const Container = styled.div`
+  ${({ theme, variant }) => `
+    background-color: ${theme.testComponentTheme[variant].backgroundColor}
   `}
 `;
 
-export const Label = styled.p`
-  font-weight: 900;
-`;
+export default Container;

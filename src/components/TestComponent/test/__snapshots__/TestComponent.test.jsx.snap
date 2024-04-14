@@ -1,48 +1,69 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`TestComponent > Button has been clicked 1`] = `
-.emotion-0 {
-  background-color: red;
-}
-
-.emotion-1 {
-  font-weight: 900;
-}
-
-<div>
-  <button
-    class="emotion-0"
-  >
-    <p
-      class="emotion-1"
-    >
-      label
-    </p>
-  </button>
-  <div>
-    Button has been clicked
-  </div>
-</div>
-`;
-
 exports[`TestComponent > Label is displayed 1`] = `
 .emotion-0 {
   background-color: blue;
 }
 
-.emotion-1 {
-  font-weight: 900;
+<div>
+  <div
+    class="emotion-0"
+  >
+    <p>
+      TestComponent
+    </p>
+    <button
+      type="button"
+    >
+      common:display.the.text
+    </button>
+    <select>
+      <option
+        value="en"
+      >
+        glossary:english
+      </option>
+      <option
+        value="fr"
+      >
+        glossary:french
+      </option>
+    </select>
+    glossary:current.language
+  </div>
+</div>
+`;
+
+exports[`TestComponent > isClicked is displayed when button is clicked 1`] = `
+.emotion-0 {
+  background-color: blue;
 }
 
 <div>
-  <button
+  <div
     class="emotion-0"
   >
-    <p
-      class="emotion-1"
-    >
-      label
+    <p>
+      TestComponent
     </p>
-  </button>
+    <button
+      type="button"
+    >
+      common:display.the.text
+    </button>
+    <select>
+      <option
+        value="en"
+      >
+        glossary:english
+      </option>
+      <option
+        value="fr"
+      >
+        glossary:french
+      </option>
+    </select>
+    glossary:current.language
+  </div>
 </div>
 `;

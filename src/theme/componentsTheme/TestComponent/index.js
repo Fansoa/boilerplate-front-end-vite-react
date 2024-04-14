@@ -1,12 +1,12 @@
-import global from "../../global";
+import global from "@/src/theme/global";
 
-const TestComponentTheme = {
-  default: {
+const testComponentTheme = {
+  bleu: {
     backgroundColor: global.colors.blue,
   },
-  hover: {
+  rouge: {
     backgroundColor: global.colors.red,
   },
 };
 
-export default TestComponentTheme;
+export default testComponentTheme;
