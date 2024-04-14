@@ -1,6 +1,7 @@
 import { withThemeFromJSXProvider } from "@storybook/addon-themes";
 import { ThemeProvider } from "@emotion/react";
-import theme from "../../src/theme/theme";
+import theme from "@/src/theme/theme";
+import "@/services/i18next/initTranslation";
 import "../../src/normalize.css";
 
 /** @type { import('@storybook/react').Preview } */
