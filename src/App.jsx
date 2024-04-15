@@ -1,7 +1,13 @@
-import TestComponent from "@/src/components/TestComponent";
+import { BrowserRouter } from "react-router-dom";
+
+import Routes from "@/src/routes";
 
 const App = () => {
-  return <TestComponent />;
+  return (
+    <BrowserRouter>
+      <Routes />
+    </BrowserRouter>
+  );
 };
 
 export default App;
