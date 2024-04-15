@@ -1,11 +1,13 @@
 import TestComponent from "@/src/components/TestComponent";
 
 export default {
-  title: "Component/TestComponent",
+  title: "Components/TestComponent",
   component: TestComponent,
   args: {
-    label: "label",
+    variant: "bleu",
   },
 };
 
-export const TestComponentStory = {};
+export const TestComponentStory = {
+  name: "Default",
+};

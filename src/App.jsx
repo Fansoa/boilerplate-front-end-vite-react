@@ -1,7 +1,7 @@
 import TestComponent from "@/src/components/TestComponent";
 
 const App = () => {
-  return <TestComponent label="label" />;
+  return <TestComponent />;
 };
 
 export default App;

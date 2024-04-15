@@ -1,9 +1,8 @@
+import testComponentTheme from "@/src/theme/componentsTheme/TestComponent";
 import global from "./global";
 
-import TestComponentTheme from "./componentsTheme/TestComponent";
-
 const componentsTheme = {
-  TestComponentTheme,
+  testComponentTheme,
 };
 
 const theme = {
