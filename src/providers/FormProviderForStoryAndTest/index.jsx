@@ -1,7 +1,7 @@
 import { FormProvider, useForm } from "react-hook-form";
 import PropTypes from "prop-types";
 
-const FormProviderStory = ({ children }) => {
+const FormProviderForStoryAndTest = ({ children }) => {
   const methods = useForm();
   return (
     // eslint-disable-next-line react/jsx-props-no-spreading
@@ -9,12 +9,12 @@ const FormProviderStory = ({ children }) => {
   );
 };
 
-FormProviderStory.propTypes = {
+FormProviderForStoryAndTest.propTypes = {
   children: PropTypes.node,
 };
 
-FormProviderStory.defaultProps = {
+FormProviderForStoryAndTest.defaultProps = {
   children: null,
 };
 
-export default FormProviderStory;
+export default FormProviderForStoryAndTest;
